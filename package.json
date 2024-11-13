@@ -1,5 +1,5 @@
 {
-  "name": "fastify-react-sample",
+  "name": "sample_test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,19 +8,20 @@
     "db:migrate": "node db/migrate.mjs",
     "dev": "docker compose up -d && nodemon src/index.js",
     "build": "npm run db:migrate",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test:e2e": "cd e2e && npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsuemura/fastify-react-sample.git"
+    "url": "git+https://github.com/s-aizawa-ais/sample_test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tsuemura/fastify-react-sample/issues"
+    "url": "https://github.com/s-aizawa-ais/sample_test/issues"
   },
-  "homepage": "https://github.com/tsuemura/fastify-react-sample#readme",
+  "homepage": "https://github.com/s-aizawa-ais/sample_test#readme",
   "dependencies": {
     "@fastify/autoload": "^5.6.0",
     "@fastify/cookie": "^8.3.0",
