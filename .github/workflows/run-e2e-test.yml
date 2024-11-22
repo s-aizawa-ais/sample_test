@@ -54,9 +54,9 @@ jobs:
           allure_results: e2e/allure-results
 
       - name: Prepare allure-history for upload
-      run: |
-        mkdir -p gh-pages/allure-history
-        cp -r allure-history/* gh-pages/allure-history/
+        run: |
+          mkdir -p gh-pages/allure-history
+          cp -r allure-history/* gh-pages/allure-history/
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v4
